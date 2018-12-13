@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ZoekLotOpArtikel</class>
+ <widget class="QDialog" name="ZoekLotOpArtikel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>815</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frameArtikel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>796</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lbArtikelnummer">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>55</y>
+      <width>96</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Artikel:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbArtikelnummer">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>191</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="inputMask">
+     <string>N.N.NN.NN</string>
+    </property>
+    <property name="text">
+     <string>0.0.00.00</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbxProduct">
+    <property name="geometry">
+     <rect>
+      <x>525</x>
+      <y>5</y>
+      <width>181</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbxSoort">
+    <property name="geometry">
+     <rect>
+      <x>525</x>
+      <y>35</y>
+      <width>181</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbSoort">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>40</y>
+      <width>61</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Soort:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbxDetail">
+    <property name="geometry">
+     <rect>
+      <x>525</x>
+      <y>65</y>
+      <width>181</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbxSpecificatie">
+    <property name="geometry">
+     <rect>
+      <x>525</x>
+      <y>95</y>
+      <width>181</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbDetail">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>70</y>
+      <width>61</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Detail:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbSpecificatie">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>100</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Specificatie:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbProduct">
+    <property name="geometry">
+     <rect>
+      <x>465</x>
+      <y>15</y>
+      <width>61</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Product:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnZoek_Art">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>5</y>
+      <width>61</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/icons/icons/zoom.png</normaloff>:/icons/icons/zoom.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnWis_Art">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>65</y>
+      <width>61</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/icons/icons/draw_eraser.png</normaloff>:/icons/icons/draw_eraser.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbArtikelNaam">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>55</y>
+      <width>321</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tbArtikelNaam</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableView" name="tvLotnummers">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>145</y>
+     <width>796</width>
+     <height>431</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOvernemen">
+   <property name="geometry">
+    <rect>
+     <x>715</x>
+     <y>580</y>
+     <width>88</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Overnemen</string>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAnnuleren">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>580</y>
+     <width>88</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Annuleren</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>986</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/icons/icons/koe.png</normaloff>:/icons/icons/koe.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>986</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Bestand">
+    <property name="title">
+     <string>&amp;Bestand</string>
+    </property>
+    <addaction name="action_Afsluiten"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="action_Over_DMP"/>
+   </widget>
+   <widget class="QMenu" name="menuBa_sisbestanden">
+    <property name="title">
+     <string>Ba&amp;sisbestanden</string>
+    </property>
+    <addaction name="actionInstellingen"/>
+   </widget>
+   <widget class="QMenu" name="menuCRM">
+    <property name="title">
+     <string>CRM</string>
+    </property>
+    <addaction name="actionRelaties"/>
+   </widget>
+   <widget class="QMenu" name="menuArtikel_beheer">
+    <property name="title">
+     <string>Artikel beheer</string>
+    </property>
+    <addaction name="actionArtikelnummers"/>
+    <addaction name="actionLotnummers"/>
+    <addaction name="actionAllergenen"/>
+    <addaction name="actionPrikkes_maken"/>
+    <addaction name="actionLeveringen"/>
+   </widget>
+   <widget class="QMenu" name="menuKassa_beheer">
+    <property name="title">
+     <string>Kassa beheer</string>
+    </property>
+    <addaction name="actionStart_weegschaal"/>
+    <addaction name="actionStart_Kassa"/>
+    <addaction name="actionToon_klantenscherm"/>
+   </widget>
+   <widget class="QMenu" name="menuRapportering">
+    <property name="title">
+     <string>Rapportering</string>
+    </property>
+    <addaction name="actionDagrapport"/>
+   </widget>
+   <widget class="QMenu" name="menuFacturatie">
+    <property name="title">
+     <string>Facturatie</string>
+    </property>
+    <addaction name="actionNieuwe_factuur"/>
+    <addaction name="actionKeuzelijst"/>
+   </widget>
+   <addaction name="menu_Bestand"/>
+   <addaction name="menuCRM"/>
+   <addaction name="menuArtikel_beheer"/>
+   <addaction name="menuKassa_beheer"/>
+   <addaction name="menuFacturatie"/>
+   <addaction name="menuBa_sisbestanden"/>
+   <addaction name="menuRapportering"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRelaties"/>
+   <addaction name="separator"/>
+   <addaction name="actionArtikelnummers"/>
+   <addaction name="actionLeveringen"/>
+   <addaction name="actionLotnummers"/>
+   <addaction name="actionStart_weegschaal"/>
+   <addaction name="actionStart_Kassa"/>
+   <addaction name="separator"/>
+   <addaction name="actionNieuwe_factuur"/>
+   <addaction name="action_Afsluiten"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Afsluiten">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/door_in.png</normaloff>:/icons/icons/door_in.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Afsluiten</string>
+   </property>
+  </action>
+  <action name="action_Over_DMP">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../icons/FatCow_Icons32x32/information.png</normaloff>../../icons/FatCow_Icons32x32/information.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Over DMP</string>
+   </property>
+  </action>
+  <action name="actionInstellingen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../icons/FatCow_Icons32x32_Ico/service_status.ico</normaloff>../../icons/FatCow_Icons32x32_Ico/service_status.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Instellingen</string>
+   </property>
+  </action>
+  <action name="actionRelaties">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/users_3.png</normaloff>:/icons/icons/users_3.png</iconset>
+   </property>
+   <property name="text">
+    <string>Relaties</string>
+   </property>
+   <property name="toolTip">
+    <string>Beheren van de Relaties Fiche</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Shift+R</string>
+   </property>
+  </action>
+  <action name="actionArtikelnummers">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/installer_box.png</normaloff>:/icons/icons/installer_box.png</iconset>
+   </property>
+   <property name="text">
+    <string>Artikelnummers</string>
+   </property>
+   <property name="toolTip">
+    <string>Beheren van de Artikelnummer Fiche</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Shift+A</string>
+   </property>
+  </action>
+  <action name="actionAllergenen">
+   <property name="text">
+    <string>Allergenen</string>
+   </property>
+  </action>
+  <action name="actionLotnummers">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/lotnummers.png</normaloff>:/icons/icons/lotnummers.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lotnummers</string>
+   </property>
+   <property name="toolTip">
+    <string>Lotnummers  beheren</string>
+   </property>
+  </action>
+  <action name="actionStart_weegschaal">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/balance.png</normaloff>:/icons/icons/balance.png</iconset>
+   </property>
+   <property name="text">
+    <string>Start Weegschaal</string>
+   </property>
+   <property name="toolTip">
+    <string>Start Weegschaal</string>
+   </property>
+  </action>
+  <action name="actionStart_Kassa">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/cash_register.png</normaloff>:/icons/icons/cash_register.png</iconset>
+   </property>
+   <property name="text">
+    <string>Start Kassa</string>
+   </property>
+  </action>
+  <action name="actionDagrapport">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/report.png</normaloff>:/icons/icons/report.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dagrapport</string>
+   </property>
+  </action>
+  <action name="actionPrikkes_maken">
+   <property name="text">
+    <string>Prikkes maken</string>
+   </property>
+  </action>
+  <action name="actionNieuwe_factuur">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/document_index.png</normaloff>:/icons/icons/document_index.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nieuwe factuur</string>
+   </property>
+  </action>
+  <action name="actionToon_klantenscherm">
+   <property name="text">
+    <string>Toon klantenscherm</string>
+   </property>
+  </action>
+  <action name="actionKeuzelijst">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/zoom.png</normaloff>:/icons/icons/zoom.png</iconset>
+   </property>
+   <property name="text">
+    <string>Keuzelijst</string>
+   </property>
+  </action>
+  <action name="actionLeveringen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/icons/lorry.png</normaloff>:/icons/icons/lorry.png</iconset>
+   </property>
+   <property name="text">
+    <string>Leveringen</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

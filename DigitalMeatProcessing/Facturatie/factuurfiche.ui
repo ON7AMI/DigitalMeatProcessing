@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FactuurFiche</class>
+ <widget class="QDialog" name="FactuurFiche">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Factuur fiche</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resource.qrc">
+    <normaloff>:/icons/icons/document_index.png</normaloff>:/icons/icons/document_index.png</iconset>
+  </property>
+  <widget class="QLabel" name="lbFactuur">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>5</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Factuurnr.:</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frameLeverancier">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>5</y>
+     <width>541</width>
+     <height>156</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lbNaam">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>35</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Naam:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbNaam">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>30</y>
+      <width>356</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>tbNaam</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbStraat">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>60</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Straat:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbStraat">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>55</y>
+      <width>356</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>tbStraat</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbEMail">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>110</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>E-Mail:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbEMail">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>105</y>
+      <width>356</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>tbEMail</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbNummer">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>10</y>
+      <width>61</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nummer:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbNummer">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>5</y>
+      <width>231</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>tbnummer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnZoek_Lev">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>5</y>
+      <width>61</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/icons/icons/zoom.png</normaloff>:/icons/icons/zoom.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGemeente">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>85</y>
+      <width>76</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gemeente:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbGemeente">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>tbGemeente</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnWis_Lev">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>70</y>
+      <width>61</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/icons/icons/draw_eraser.png</normaloff>:/icons/icons/draw_eraser.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbRelatie">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>10</y>
+      <width>96</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Relatie:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbPostcode">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>80</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tbPostcode</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbBTW_Nummer">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>130</y>
+      <width>356</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>tbBTW_Nummer</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbBTW_Nummer">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>135</y>
+      <width>76</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BTW Nr.:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="lbDatum">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>30</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Datum :</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tvRegels">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>170</y>
+     <width>806</width>
+     <height>351</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRegelToevoegen">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>111</y>
+     <width>56</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Regel Toevoegen</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/icons/icons/add.png</normaloff>:/icons/icons/add.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOpslaan">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>110</y>
+     <width>56</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Factuur opslaan</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/icons/icons/save_close.png</normaloff>:/icons/icons/save_close.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPrinten">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>555</y>
+     <width>56</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Faktuur Printen</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/icons/icons/printer.png</normaloff>:/icons/icons/printer.png</iconset>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dtpDatum">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>35</y>
+     <width>116</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="displayFormat">
+    <string>dd/MM/yyyy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tvBTWBlock">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>525</y>
+     <width>416</width>
+     <height>136</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tbTotEx">
+   <property name="geometry">
+    <rect>
+     <x>705</x>
+     <y>535</y>
+     <width>113</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>tbTotEx</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tbTotBTW">
+   <property name="geometry">
+    <rect>
+     <x>705</x>
+     <y>570</y>
+     <width>113</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>tbTotBTW</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tbTotIn">
+   <property name="geometry">
+    <rect>
+     <x>705</x>
+     <y>605</y>
+     <width>113</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>tbTotIn</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTotEx">
+   <property name="geometry">
+    <rect>
+     <x>595</x>
+     <y>540</y>
+     <width>116</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Totaal Excl.BTW:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTotBTW">
+   <property name="geometry">
+    <rect>
+     <x>595</x>
+     <y>575</y>
+     <width>106</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Totaal BTW:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbTotIncl">
+   <property name="geometry">
+    <rect>
+     <x>595</x>
+     <y>610</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Totaal Incl. BTW:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnEditLine">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>110</y>
+     <width>56</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Regel bewerken</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/icons/icons/edit_button.png</normaloff>:/icons/icons/edit_button.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAddTicket">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>110</y>
+     <width>56</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Kasticket factureren</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/icons/icons/cash_register.png</normaloff>:/icons/icons/cash_register.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

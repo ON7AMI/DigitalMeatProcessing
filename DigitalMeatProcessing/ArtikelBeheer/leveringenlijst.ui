@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LeveringenLijst</class>
+ <widget class="QDialog" name="LeveringenLijst">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>747</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>736</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QCheckBox" name="cbFilterLeverancier">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>176</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filter op Leverancier.</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbLeverancier">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>5</y>
+      <width>206</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tbLeverancier</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnZoek">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>1</y>
+      <width>88</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zoek</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/icons/icons/zoom.png</normaloff>:/icons/icons/zoom.png</iconset>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dtpVanDatum">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>35</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>dd/MM/yyyy</string>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dtpTotDatum">
+    <property name="geometry">
+     <rect>
+      <x>295</x>
+      <y>35</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="displayFormat">
+     <string>dd/MM/yyyy</string>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbVanDatum">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>96</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vanaf datum:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTotDatum">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>76</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tot datum:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnExit">
+    <property name="geometry">
+     <rect>
+      <x>662</x>
+      <y>5</y>
+      <width>66</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/icons/icons/door_in.png</normaloff>:/icons/icons/door_in.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAdd">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>5</y>
+      <width>66</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/icons/icons/add.png</normaloff>:/icons/icons/add.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRefresh">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>5</y>
+      <width>66</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/icons/icons/refresh_all.png</normaloff>:/icons/icons/refresh_all.png</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableView" name="tvLeveringenLijst">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>75</y>
+     <width>736</width>
+     <height>486</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dlgSettings</class>
+ <widget class="QDialog" name="dlgSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../icons/FatCow_Icons32x32_Ico/service_status.ico</normaloff>../../icons/FatCow_Icons32x32_Ico/service_status.ico</iconset>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>795</x>
+     <y>445</y>
+     <width>111</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabPages">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>901</width>
+     <height>426</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="tabDatabase">
+    <attribute name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/icons/icons/database_server.png</normaloff>:/icons/icons/database_server.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Database Settings</string>
+    </attribute>
+    <widget class="QLineEdit" name="tbPassword">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>100</y>
+       <width>181</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbPassword</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbUserName">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>User name:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbUserName">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>70</y>
+       <width>181</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbUserName</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPassword">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Paswoord:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbHostname">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hostname:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbHostname">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>10</y>
+       <width>181</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbHostname</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbDatabaseName">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>40</y>
+       <width>181</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbDatabaseName</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDatabaseName">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Database name:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabAndere">
+    <attribute name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/icons/icons/users_3.png</normaloff>:/icons/icons/users_3.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Relatie velden</string>
+    </attribute>
+    <widget class="QGroupBox" name="grbxFlags">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>5</y>
+       <width>246</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+     </property>
+     <property name="title">
+      <string>Vlaggen:</string>
+     </property>
+     <widget class="QLineEdit" name="tbFlag_1">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>35</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_1</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbFlag_2">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>65</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbFlag_3">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>95</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_3</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbFlag_4">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>125</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_4</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbFlag_5">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>155</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_5</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbFlag_6">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>185</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_6</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbFlag_7">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>215</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_7</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbFlag_8">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>245</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_8</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbFlag_9">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>275</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_9</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbFlag_10">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>305</y>
+        <width>113</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbFlag_10</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_1">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>40</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_2">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>70</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 2:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_3">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>100</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 3:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_4">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>130</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 4:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_5">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>160</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 5:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_6">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>190</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 6:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_7">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>220</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 7:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_8">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>250</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 8:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_9">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>280</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 9:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFlag_10">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>310</y>
+        <width>61</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vlag 10:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="grbxVrijeTeksten">
+     <property name="geometry">
+      <rect>
+       <x>275</x>
+       <y>5</y>
+       <width>266</width>
+       <height>186</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+     </property>
+     <property name="title">
+      <string>Vrije teksten:</string>
+     </property>
+     <widget class="QLineEdit" name="tbVrijTekst1">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijTekst1</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbVrijTekst2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>50</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijTekst2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbVrijTekst3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijTekst3</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbVrijTekst4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>110</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijTekst4</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbVrijTekst5">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>140</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijTekst5</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijTekst1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>25</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vrije Tekst1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijTekst2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>55</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vrije Tekst2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijTekst3">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>85</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>VrijeTekst3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijTekst4">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>115</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>VrijeTekst4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijTekst5">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>145</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>VrijeTekst5</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="grbxVrijeGetallen">
+     <property name="geometry">
+      <rect>
+       <x>275</x>
+       <y>200</y>
+       <width>271</width>
+       <height>186</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+     </property>
+     <property name="title">
+      <string>Vrije Getallen:</string>
+     </property>
+     <widget class="QLineEdit" name="tbVrijNum1">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijNum1</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbVrijNum2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>50</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijNum2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbVrijNum3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijNum3</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbVrijNum4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>110</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijNum4</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbVrijNum5">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>140</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbVrijNum5</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijNum1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>25</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vrij Num1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijNum2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>55</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vrij Num2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijNum3">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>85</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vrij Num3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijNum4">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>115</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vrij Num4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbVrijNum5">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>145</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vrij Num5</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="grbxID_andere">
+     <property name="geometry">
+      <rect>
+       <x>555</x>
+       <y>5</y>
+       <width>266</width>
+       <height>186</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+     </property>
+     <property name="title">
+      <string>ID's andere paketten:</string>
+     </property>
+     <widget class="QLineEdit" name="tbID_1">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="text">
+       <string>tbID_1</string>
+      </property>
+      <property name="maxLength">
+       <number>32767</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbID_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>50</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbID_2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbID_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbID_3</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbID_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>110</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbID_4</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tbID_5">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>140</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>tbID_5</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbID_1">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>25</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tekst ID 1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbID_2">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>55</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tekst ID 2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbID_3">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>85</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tekst ID 3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbID_4">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>115</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tekst ID 4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbID_5">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>145</y>
+        <width>86</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tekst ID 5</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="btnDefaultRelaties">
+     <property name="geometry">
+      <rect>
+       <x>645</x>
+       <y>250</y>
+       <width>88</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Standaard
+waarden
+Relaties</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Printers</string>
+    </attribute>
+    <widget class="QLabel" name="lbLotnrPr1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>146</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lotnummerprinter-1:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxLotnrPr1">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>15</y>
+       <width>281</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbWeegschaal">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>65</y>
+       <width>146</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Winkel Weegschaal:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxWeegschaal">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>60</y>
+       <width>281</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxTicketPrinter">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>105</y>
+       <width>281</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbTicketPrinter">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>146</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ticket Printer:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxLabelPrinterWinkel">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>150</y>
+       <width>281</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbLabelPrinterWinkel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>155</y>
+       <width>146</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Label Printer Winkel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Diverse">
+    <attribute name="title">
+     <string>Diverse</string>
+    </attribute>
+    <widget class="QLabel" name="lbKassaAfbeeldingen">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>20</y>
+       <width>186</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Map Afbeeldingen Kassa's</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbKassaAfbeeldingen">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>15</y>
+       <width>571</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnKassaAfbeeldingen">
+     <property name="geometry">
+      <rect>
+       <x>785</x>
+       <y>10</y>
+       <width>36</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbNummerKassa">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>55</y>
+       <width>116</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nummer kassa:</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="sbNummerKassa">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>50</y>
+       <width>48</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tbHostname</tabstop>
+  <tabstop>tbDatabaseName</tabstop>
+  <tabstop>tbUserName</tabstop>
+  <tabstop>tbPassword</tabstop>
+  <tabstop>tabPages</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>dlgSettings</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>dlgSettings</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

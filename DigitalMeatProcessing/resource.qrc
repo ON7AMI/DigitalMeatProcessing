@@ -1,0 +1,49 @@
+<RCC>
+    <qresource prefix="/"/>
+    <qresource prefix="/icons">
+        <file>icons/stop2.png</file>
+        <file>icons/door_in.png</file>
+        <file>icons/users_3.png</file>
+        <file>icons/tag_hash.png</file>
+        <file>icons/add.png</file>
+        <file>icons/edit_button.png</file>
+        <file>icons/eID_logo.png</file>
+        <file>icons/filter.png</file>
+        <file>icons/filter_clear.png</file>
+        <file>icons/save_close.png</file>
+        <file>icons/zoom.png</file>
+        <file>icons/database_server.png</file>
+        <file>icons/setting_tools.png</file>
+        <file>icons/picture_add.png</file>
+        <file>icons/koe.png</file>
+        <file>icons/file_manager.png</file>
+        <file>icons/before_change.png</file>
+        <file>icons/before_delete.png</file>
+        <file>icons/document_index.png</file>
+        <file>icons/cross.png</file>
+        <file>icons/installer_box.png</file>
+        <file>icons/draw_eraser.png</file>
+        <file>icons/lotnummers.png</file>
+        <file>icons/printer.png</file>
+        <file>icons/calculator.png</file>
+        <file>icons/bin_recycle.png</file>
+        <file>icons/barcode.png</file>
+        <file>icons/undo.png</file>
+        <file>icons/Logo.png</file>
+        <file>icons/balance.png</file>
+        <file>icons/cash_register.png</file>
+        <file>icons/euro.png</file>
+        <file>icons/money.png</file>
+        <file>icons/Logo_zww.png</file>
+        <file>icons/card_back.png</file>
+        <file>icons/cheque.png</file>
+        <file>icons/credit.png</file>
+        <file>icons/creditcards.png</file>
+        <file>icons/dinersclub.png</file>
+        <file>icons/pencil_add.png</file>
+        <file>icons/pencil_delete.png</file>
+        <file>icons/refresh_all.png</file>
+        <file>icons/report.png</file>
+        <file>icons/lorry.png</file>
+    </qresource>
+</RCC>

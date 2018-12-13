@@ -1,0 +1,2029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ArtikelnummerBeheer</class>
+ <widget class="QMainWindow" name="ArtikelnummerBeheer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1299</width>
+    <height>799</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Artikelnummer beheer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icons/icons/installer_box.png</normaloff>:/icons/icons/installer_box.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="cbxProduct">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>25</y>
+      <width>181</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbProduct">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>5</y>
+      <width>61</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Product:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbxSpecificatie">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>25</y>
+      <width>171</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbDetail">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>5</y>
+      <width>61</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Detail:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbxDetail">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>25</y>
+      <width>181</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbSpecificatie">
+    <property name="geometry">
+     <rect>
+      <x>725</x>
+      <y>5</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Specificatie:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbxSoort">
+    <property name="geometry">
+     <rect>
+      <x>255</x>
+      <y>25</y>
+      <width>181</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbSoort">
+    <property name="geometry">
+     <rect>
+      <x>255</x>
+      <y>5</y>
+      <width>61</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Soort:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbArtikelnummer">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>15</y>
+      <width>151</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="inputMask">
+     <string>N.N.NN.NN</string>
+    </property>
+    <property name="text">
+     <string>0.0.00.00</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbArtikelnummer">
+    <property name="geometry">
+     <rect>
+      <x>955</x>
+      <y>25</y>
+      <width>176</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Artikel nummer:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbBenaming">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>65</y>
+      <width>76</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Benaming:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbBenaming">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>60</y>
+      <width>221</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tbBenaming</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbOmschrijving">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>65</y>
+      <width>96</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Omschrijving:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbOmschrijving">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>60</y>
+      <width>451</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tbOmschrijving</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbBarcode">
+    <property name="geometry">
+     <rect>
+      <x>915</x>
+      <y>65</y>
+      <width>61</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Barcode:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbBarcode">
+    <property name="geometry">
+     <rect>
+      <x>1005</x>
+      <y>60</y>
+      <width>276</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tbBarcode</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbExtPLU">
+    <property name="geometry">
+     <rect>
+      <x>1005</x>
+      <y>90</y>
+      <width>276</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tbExtPLU</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbRFI">
+    <property name="geometry">
+     <rect>
+      <x>1005</x>
+      <y>120</y>
+      <width>276</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tbRFI</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbExtraCode">
+    <property name="geometry">
+     <rect>
+      <x>1005</x>
+      <y>150</y>
+      <width>276</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tbExtraCode</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbExtPLU">
+    <property name="geometry">
+     <rect>
+      <x>915</x>
+      <y>95</y>
+      <width>86</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Externe PLU:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbRFI">
+    <property name="geometry">
+     <rect>
+      <x>915</x>
+      <y>125</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RFI-Code:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbExtraCode">
+    <property name="geometry">
+     <rect>
+      <x>915</x>
+      <y>155</y>
+      <width>86</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Extra Code:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMaintProduct">
+    <property name="geometry">
+     <rect>
+      <x>205</x>
+      <y>15</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/icons/icons/before_change.png</normaloff>:/icons/icons/before_change.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAfbeelding">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>225</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/icons/icons/picture_add.png</normaloff>:/icons/icons/picture_add.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMaintSpecificatie">
+    <property name="geometry">
+     <rect>
+      <x>895</x>
+      <y>15</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/icons/icons/before_change.png</normaloff>:/icons/icons/before_change.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMaintDetail">
+    <property name="geometry">
+     <rect>
+      <x>675</x>
+      <y>15</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/icons/icons/before_change.png</normaloff>:/icons/icons/before_change.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMaintSoort">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>15</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/icons/icons/before_change.png</normaloff>:/icons/icons/before_change.png</iconset>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="grbxVerkoop">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>80</y>
+      <width>881</width>
+      <height>126</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Verkoop:</string>
+    </property>
+    <widget class="QLabel" name="lbEenheidVerkoop">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>25</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Eenheid van Verkoop:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxEenheidVerkoop">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>226</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMaintEenheid">
+     <property name="geometry">
+      <rect>
+       <x>395</x>
+       <y>15</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icons/icons/before_change.png</normaloff>:/icons/icons/before_change.png</iconset>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxBTWVerkoop">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>20</y>
+       <width>246</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbBTWVerkoop">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>25</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BTW-tarief Verkoop:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMaintBTWtarief">
+     <property name="geometry">
+      <rect>
+       <x>835</x>
+       <y>15</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icons/icons/before_change.png</normaloff>:/icons/icons/before_change.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbVerkoopprijs">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>60</y>
+       <width>96</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbVerkoopprijs</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbPromotiePrijs">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>95</y>
+       <width>96</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbPromotiePrijs</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbVerkoopprijs">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>65</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Normale Verkoopprijs:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPromotiePrijs">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>95</y>
+       <width>136</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Promotie Prijs:</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dtpPromVan">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>90</y>
+       <width>106</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPromVan">
+     <property name="geometry">
+      <rect>
+       <x>305</x>
+       <y>95</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Van:</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dtpPromTot">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>90</y>
+       <width>106</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPromTot">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>95</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tot:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbStatVerkMin">
+     <property name="geometry">
+      <rect>
+       <x>515</x>
+       <y>60</y>
+       <width>86</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>tbStatVerkMin</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbStatVerkGem">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>60</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>tbStatVerkGem</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbStatVerkMax">
+     <property name="geometry">
+      <rect>
+       <x>787</x>
+       <y>60</y>
+       <width>86</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>tbStatVerkMax</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbStatVerkGem">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>65</y>
+       <width>46</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gem.:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbStatVerkMax">
+     <property name="geometry">
+      <rect>
+       <x>745</x>
+       <y>65</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max.:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbStatVerk">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>65</y>
+       <width>116</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stat.per kg.Min.:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbLaatstePrijsUpdate">
+     <property name="geometry">
+      <rect>
+       <x>595</x>
+       <y>95</y>
+       <width>166</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Laatste Prijsaanpassing:</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dtpLaatstePrijsUpdate">
+     <property name="geometry">
+      <rect>
+       <x>764</x>
+       <y>90</y>
+       <width>106</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCalcVKP">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>50</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icons/icons/calculator.png</normaloff>:/icons/icons/calculator.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCalcPromo">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>85</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icons/icons/calculator.png</normaloff>:/icons/icons/calculator.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbincl">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>305</x>
+       <y>60</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="grbxAankoop">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>210</y>
+      <width>881</width>
+      <height>86</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Aankoop:</string>
+    </property>
+    <widget class="QComboBox" name="cbxEenheidAankoop">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>221</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbEenheidAankoop">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>25</y>
+       <width>146</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Eenheid van Aankoop:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxBTWAankoop">
+     <property name="geometry">
+      <rect>
+       <x>535</x>
+       <y>20</y>
+       <width>91</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbBTWAankoop">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>25</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BTW-tarief Aankoop:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbLaatsteAankoopprijs">
+     <property name="geometry">
+      <rect>
+       <x>75</x>
+       <y>55</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbLaatsteAankoopprijs</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbStatAank">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>60</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Min.:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbStatAankMax">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>55</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>tbStatAankMax</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbStatAankMin">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>55</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>tbStatAankMin</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbAankoopprijs">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>60</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Laatste:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbStatAankGem">
+     <property name="geometry">
+      <rect>
+       <x>345</x>
+       <y>60</y>
+       <width>46</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gem.:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbStatAankGem">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>55</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>tbStatAankGem</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbStatAankMax">
+     <property name="geometry">
+      <rect>
+       <x>495</x>
+       <y>60</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max.:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbMinWinstfactor">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>15</y>
+       <width>76</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Minimale 
+Winstfactor:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbMinWinstfactor">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>20</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbMinWinstfactor</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnWinstControle">
+     <property name="geometry">
+      <rect>
+       <x>795</x>
+       <y>15</y>
+       <width>76</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Controle</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbHuidigeWinstfactor_2">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>50</y>
+       <width>76</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Huidige
+Winstfactor:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbHuidigeWinstfactor">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>55</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbHuidigeWinstfactor</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="grbxDiverse">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>385</y>
+      <width>1276</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Diverse:</string>
+    </property>
+    <widget class="QLabel" name="lbHoudbaarheid">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>20</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Houdbaarheid in dagen:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbHoudbaarheid">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>15</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbHoudbaarheid</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbWettelijk">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>20</y>
+       <width>146</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Wettelijke bepalingen:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbWettelijk">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>15</y>
+       <width>411</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbWettelijk</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbOpmerkingen">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>45</y>
+       <width>676</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbOpmerkingen</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbOpmerkingen">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>50</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Opmerkingen:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbActiefVan">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>20</y>
+       <width>76</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Actief Van:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbActiefTot">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>50</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Actief Tot:</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dtpActiefVan">
+     <property name="geometry">
+      <rect>
+       <x>1145</x>
+       <y>15</y>
+       <width>116</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dtpActiefTot">
+     <property name="geometry">
+      <rect>
+       <x>1145</x>
+       <y>45</y>
+       <width>116</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbTemperatuur">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>15</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbTemperatuur</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbTemperatuur">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>20</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bewaar temp.:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbVochtigheid">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>50</y>
+       <width>156</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Luchtvochtigheid (in %):</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbVochtigheid">
+     <property name="geometry">
+      <rect>
+       <x>1010</x>
+       <y>45</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbVochtigheid</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="grbxIngredienten">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>465</y>
+      <width>316</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Ingredienten:</string>
+    </property>
+    <widget class="QPushButton" name="btnIngredienten">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>0</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icons/icons/edit_button.png</normaloff>:/icons/icons/edit_button.png</iconset>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tvIngredienten">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>26</y>
+       <width>296</width>
+       <height>206</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>tvIngredienten</zorder>
+    <zorder>btnIngredienten</zorder>
+   </widget>
+   <widget class="QGroupBox" name="grbxVoedingswaarden">
+    <property name="geometry">
+     <rect>
+      <x>335</x>
+      <y>465</y>
+      <width>316</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Voedingswaarden:</string>
+    </property>
+    <widget class="QPushButton" name="btnVoedingswaarden">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>0</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icons/icons/add.png</normaloff>:/icons/icons/add.png</iconset>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tvVoedingswaarden">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>296</width>
+       <height>206</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>tvVoedingswaarden</zorder>
+    <zorder>btnVoedingswaarden</zorder>
+   </widget>
+   <widget class="QLabel" name="lbAfbeelding">
+    <property name="geometry">
+     <rect>
+      <x>1115</x>
+      <y>245</y>
+      <width>86</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Afbeelding:</string>
+    </property>
+   </widget>
+   <widget class="my_lbFoto" name="lbImg">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>265</y>
+      <width>176</width>
+      <height>116</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(223, 218, 218);</string>
+    </property>
+    <property name="text">
+     <string>img</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="grbxAllergenen">
+    <property name="geometry">
+     <rect>
+      <x>655</x>
+      <y>465</y>
+      <width>316</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Allergenen:</string>
+    </property>
+    <widget class="QPushButton" name="btnAllergenen">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>0</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icons/icons/edit_button.png</normaloff>:/icons/icons/edit_button.png</iconset>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tvAllergenen">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>296</width>
+       <height>206</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>30</number>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>15</number>
+     </attribute>
+    </widget>
+    <zorder>tvAllergenen</zorder>
+    <zorder>btnAllergenen</zorder>
+   </widget>
+   <widget class="QGroupBox" name="grbxConcurentie">
+    <property name="geometry">
+     <rect>
+      <x>975</x>
+      <y>465</y>
+      <width>316</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Concurentie:</string>
+    </property>
+    <widget class="QPushButton" name="btnConcurentie">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>0</y>
+       <width>36</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icons/icons/add.png</normaloff>:/icons/icons/add.png</iconset>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tvConcurentie">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>296</width>
+       <height>206</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+    </widget>
+    <zorder>tvConcurentie</zorder>
+    <zorder>btnConcurentie</zorder>
+   </widget>
+   <widget class="QPushButton" name="btnDocuments">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>260</y>
+      <width>126</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Documenten</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/icons/icons/document_index.png</normaloff>:/icons/icons/document_index.png</iconset>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>300</y>
+      <width>1086</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+border: 3px solid gray;
+border-radius: 5px;
+margin-top: 8px;
+border-style: outset;
+}
+
+QGroupBox::title {
+subcontrol-origin: margin;
+left: 15px;
+padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Voorraad</string>
+    </property>
+    <widget class="QLabel" name="lbHuidigeVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>20</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Huidige Voorraad:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbHuidigeVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>15</y>
+       <width>86</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbHuidigeVoorraad</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbLaatsteAankoop">
+     <property name="geometry">
+      <rect>
+       <x>275</x>
+       <y>15</y>
+       <width>76</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Laatste 
+Aankoop:</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dtpLaatsteAankoop">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>15</y>
+       <width>96</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbLaatsteVerkoop">
+     <property name="geometry">
+      <rect>
+       <x>485</x>
+       <y>15</y>
+       <width>71</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Laatste 
+Verkoop:</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dtpLaatsteVerkoop">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>15</y>
+       <width>96</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbMinimumVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>50</y>
+       <width>136</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Minimum Voorraad:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbMinimumVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>45</y>
+       <width>86</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbMinimumVoorraad</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbCritischeVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>235</x>
+       <y>50</y>
+       <width>136</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Critische Voorraad:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbCritischeVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>365</x>
+       <y>45</y>
+       <width>96</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbCritischeVoorraad</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbMaximumVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>50</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Maximum Voorraad:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbMaximumVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>625</x>
+       <y>45</y>
+       <width>96</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbMaximumVoorraad</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbLaatsteBestelling">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>10</y>
+       <width>76</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Laatste 
+Bestelling:</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dtpLaatsteBestelling">
+     <property name="geometry">
+      <rect>
+       <x>755</x>
+       <y>15</y>
+       <width>96</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbBesteldeVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>50</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bestelde Voorraad:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tbBesteldeVoorraad">
+     <property name="geometry">
+      <rect>
+       <x>865</x>
+       <y>45</y>
+       <width>96</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tbBesteldeVoorraad</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbLaatstePrijscontrole">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>10</y>
+       <width>81</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Laatste
+Prijscontrole</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dtpLaatstePrijscontrole">
+     <property name="geometry">
+      <rect>
+       <x>965</x>
+       <y>15</y>
+       <width>91</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd/MM/yyyy</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnRecepten">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>220</y>
+      <width>126</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Recepten</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/icons/icons/document_index.png</normaloff>:/icons/icons/document_index.png</iconset>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbPrikkergewenst">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>180</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Prikker gewenst.</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbPrikkerAfgedrukt">
+    <property name="geometry">
+     <rect>
+      <x>1055</x>
+      <y>180</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Prikker afgedrukt.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1299</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionFind"/>
+   <addaction name="separator"/>
+   <addaction name="actionNew"/>
+   <addaction name="actionAanpassen"/>
+   <addaction name="actionSave"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionAfsluiten"/>
+  </widget>
+  <action name="actionAfsluiten">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/icons/stop2.png</normaloff>:/icons/icons/stop2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Afsluiten</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/icons/zoom.png</normaloff>:/icons/icons/zoom.png</iconset>
+   </property>
+   <property name="text">
+    <string>Find</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoeken naar een artikel</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/icons/add.png</normaloff>:/icons/icons/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="toolTip">
+    <string>Nieuw artikelnummer aanmaken</string>
+   </property>
+  </action>
+  <action name="actionAanpassen">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/icons/edit_button.png</normaloff>:/icons/icons/edit_button.png</iconset>
+   </property>
+   <property name="text">
+    <string>Aanpassen</string>
+   </property>
+   <property name="toolTip">
+    <string>Bestaan artikelnummer aanpassen</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/icons/save_close.png</normaloff>:/icons/icons/save_close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Huidig artikelnummer opslaan</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>my_lbFoto</class>
+   <extends>QLabel</extends>
+   <header>my_lbfoto.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>cbxProduct</tabstop>
+  <tabstop>cbxSoort</tabstop>
+  <tabstop>cbxDetail</tabstop>
+  <tabstop>cbxSpecificatie</tabstop>
+  <tabstop>tbArtikelnummer</tabstop>
+  <tabstop>tbBenaming</tabstop>
+  <tabstop>tbOmschrijving</tabstop>
+  <tabstop>cbxEenheidAankoop</tabstop>
+  <tabstop>tbBarcode</tabstop>
+  <tabstop>tbExtPLU</tabstop>
+  <tabstop>tbRFI</tabstop>
+  <tabstop>tbExtraCode</tabstop>
+  <tabstop>btnConcurentie</tabstop>
+  <tabstop>btnAllergenen</tabstop>
+  <tabstop>btnVoedingswaarden</tabstop>
+  <tabstop>btnIngredienten</tabstop>
+  <tabstop>btnAfbeelding</tabstop>
+  <tabstop>btnMaintBTWtarief</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

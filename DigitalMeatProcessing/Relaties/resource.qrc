@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/"/>
+    <qresource prefix="/icons">
+        <file>icons/stop2.png</file>
+        <file>icons/zoom.png</file>
+        <file>icons/filter.png</file>
+        <file>icons/eID_logo.png</file>
+        <file>icons/add.png</file>
+        <file>icons/edit_button.png</file>
+        <file>icons/save_close.png</file>
+        <file>icons/filter_clear.png</file>
+    </qresource>
+</RCC>

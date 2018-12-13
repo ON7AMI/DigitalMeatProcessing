@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Digital Meat Processing
+Comment=Logistiek programma voor de vleesverwerking
+Exec=/usr/DMP/DigitalMeatProcessing
+Icon=/home/jpm/DMP/koe.png
+Path=/usr/DMP
+Terminal=false
+StartupNotify=false
